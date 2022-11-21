@@ -12,7 +12,7 @@ class ResortController extends Controller
 
     public function index()
     {
-        $resort = Resort::withTrashed()->latest()->paginate(5);
+        $resort = Resort::withTrashed()->latest()->filter(request(['search']))->paginate(5);
         return view('resorts.index', ['resorts' => $resort]);
     }
 

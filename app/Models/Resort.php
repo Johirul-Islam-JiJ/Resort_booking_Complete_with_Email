@@ -29,4 +29,11 @@ class Resort extends Model
     {
         return $this->hasMany(Booking::class);
     }
+    public function scopeFilter($query, array $filters)
+    {
+        $query->when($filters['search'] ?? false,function($query, $search){
+            $query
+                ->where('name', 'like', '%' . $search . '%');
+        });
+    }
 }
