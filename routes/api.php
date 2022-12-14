@@ -1,7 +1,10 @@
 <?php
 
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api;
+use App\Http\Controllers\Api\ResortController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//for invoke remove index[]
+
+// Route::get('resorts', [Api\ResortController::class,'index']);
+
+Route::apiResource('resorts', Api\ResortController::class );
