@@ -74,4 +74,8 @@ class ResortController extends Controller
         return response()->json(['error' => 'Uh !! Something Wrong'], 500);
 
     }
+
+    public function search($name) {
+        return Resort::where('name','like','%'.$name.'%')->get();
+    }
 }

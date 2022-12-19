@@ -26,3 +26,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // Route::get('resorts', [Api\ResortController::class,'index']);
 
 Route::apiResource('resorts', Api\ResortController::class );
+Route::get('search/{name}', [Api\ResortController::class,'search']);
