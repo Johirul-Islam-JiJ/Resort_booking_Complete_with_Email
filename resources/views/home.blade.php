@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app') --}}
 <!-- Scripts -->
 <!--   Core JS Files   -->
 {{-- <link rel="stylesheet" href="{{ asset('css/custom/material-dashboard.css') }}">
