@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
+
 class UserController extends Controller
 {
     public function index()
@@ -34,12 +35,12 @@ class UserController extends Controller
 
         $user = User::create($valid);
 
-        if($user)
-        try {
-            Mail::to($user->email)->send(new UserAccount($user, $password));
-        }
-        catch (\Exception $exception) {
-            echo $exception-> getMessage();
+        if ($user) {
+            try {
+                Mail::to($user->email)->send(new UserAccount($user, $password));
+            } catch (\Exception$exception) {
+                echo $exception->getMessage();
+            }
         }
 
         return redirect(route('users.index'))->with('message', 'User Added Successfully');
@@ -51,7 +52,6 @@ class UserController extends Controller
         $user->delete();
         return redirect(route('users.index'))->with('message', 'User Trash Successfully');
     }
-
 
     public function restore($id)
     {
@@ -65,5 +65,25 @@ class UserController extends Controller
         $user = User::withTrashed()->find($id);
         $user->forceDelete();
         return redirect(route('users.index'))->with('message', 'User Deleted Successfully');
+    }
+
+    public function login(Request $request)
+    {
+        $user = User::where('email', $request->email)->first();
+        // print_r($data);
+        if (!$user || !Hash::check($request->password, $user->password)) {
+            return response([
+                'message' => ['These credentials do not match our records.'],
+            ], 404);
+        }
+
+        $token = $user->createToken('my-app-token')->plainTextToken;
+
+        $response = [
+            'user' => $user,
+            'token' => $token,
+        ];
+
+        return response($response, 201);
     }
 }
