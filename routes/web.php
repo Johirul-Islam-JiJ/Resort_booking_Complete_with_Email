@@ -22,6 +22,9 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::get('users/{id}/restore', [UserController::class, 'restore'])->name('users.restore');
     Route::get('users/{id}/force-delete', [UserController::class, 'forceDelete'])->name('users.forceDelete');
+    Route::resource('categories', CategoryController::class)
+    ->except('show');
+
 
 
 
