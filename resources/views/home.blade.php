@@ -63,6 +63,9 @@
 
         <div class="container-fluid py-4">
             @yield('content')
+            <h1 class="text-center">
+                hello this is admin dashboard
+            </h1>
         </div>
 
     </main>
