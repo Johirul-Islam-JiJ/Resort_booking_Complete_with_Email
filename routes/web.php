@@ -6,12 +6,14 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ResortController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\SubCategoryController;
 
 
 //homepage resort
-Route::get('/', HomepageController::class)->name('homepage');
+// Route::get('/', HomepageController::class)->name('homepage');
+Route::get('/',[FrontendController::class,'index']);
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
