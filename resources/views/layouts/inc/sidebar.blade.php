@@ -37,27 +37,40 @@
                     </div>
                     <span class="nav-link-text ms-1">Resort List</span>
                 </a>
-            </li> <li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link text-white " href="{{ route('bookings.index') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">table_view</i>
                     </div>
                     <span class="nav-link-text ms-1">Booking List</span>
                 </a>
-            </li></li> <li class="nav-item">
-                <a class="nav-link text-white " href="{{ route('users.index')}}">
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{{ route('users.index') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">table_view</i>
                     </div>
                     <span class="nav-link-text ms-1">User List</span>
                 </a>
             </li>
-            </li></li> <li class="nav-item">
-                <a class="nav-link text-white " href="{{ route('categories.index')}}">
+
+
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{{ route('categories.index') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">table_view</i>
                     </div>
                     <span class="nav-link-text ms-1">Category List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{{ route('categories.index') }}">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="material-icons opacity-10">table_view</i>
+                    </div>
+                    <span class="nav-link-text ms-1">Sub Category List</span>
                 </a>
             </li>
 
@@ -139,15 +152,16 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white " href="{{ route('logout') }}"onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <a class="nav-link text-white "
+                    href="{{ route('logout') }}"onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">logout</i>
                     </div>
                     <span class="nav-link-text ms-1">Sign Out</span>
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
-            </form>
+                    @csrf
+                </form>
             </li>
         </ul>
     </div>
