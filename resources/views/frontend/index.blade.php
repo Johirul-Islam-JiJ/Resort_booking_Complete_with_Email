@@ -7,6 +7,7 @@
 
 @section('content')
 
+    @include('layouts.inc.slider')
     <h1>
         hello world
     </h1>
