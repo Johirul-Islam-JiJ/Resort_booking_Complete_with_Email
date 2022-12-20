@@ -50,20 +50,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <link href="{{ asset('admin/css/material-dashboard.css') }}" rel="stylesheet">
-
+    <title>
+        @yield('titile')
+    </title>
 
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
-    @include('layouts.inc.sidebar')
 
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 
-        @include('layouts.inc.adminnav')
 
         <div class="container-fluid py-4">
             <h4 class="text-center ">
-                Welcome To Admin dashboard !!!
+                Welcome To Frpnt end !!!
             </h4>
             @yield('content')
 
