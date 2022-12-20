@@ -62,10 +62,11 @@
         @include('layouts.inc.adminnav')
 
         <div class="container-fluid py-4">
-            @yield('content')
-            <h1 class="text-center">
-                hello this is admin dashboard
+            <h1 class="text-center ">
+                Welcome To Admin dashboard !!!
             </h1>
+            @yield('content')
+
         </div>
 
     </main>
