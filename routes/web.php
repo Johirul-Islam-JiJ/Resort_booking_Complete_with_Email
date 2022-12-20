@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\BookingController;
-use App\Http\Controllers\HomepageController;
-use App\Http\Controllers\ResortController;
-use App\Http\Controllers\UserController;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ResortController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HomepageController;
 
 
 //homepage resort

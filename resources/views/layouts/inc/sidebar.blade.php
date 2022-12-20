@@ -52,6 +52,14 @@
                     <span class="nav-link-text ms-1">User List</span>
                 </a>
             </li>
+            </li></li> <li class="nav-item">
+                <a class="nav-link text-white " href="{{ route('categories.index')}}">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="material-icons opacity-10">table_view</i>
+                    </div>
+                    <span class="nav-link-text ms-1">Category List</span>
+                </a>
+            </li>
 
             {{-- <li class="nav-item">
                 <a class="nav-link text-white" href="{{ route('categories.index') }}">

@@ -24,7 +24,7 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $valid = $request->validate([
-            'name' => ['required', 'string', 'max:255', 'min:3'],
+            'name' => ['required', 'string', 'max:255', 'min:1'],
         ]);
 
         if (Category::create($valid)) {
