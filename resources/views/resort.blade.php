@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-
+@include('layouts.inc.slider')
  <div class="container">
+
+
 
 
         <div class="row">
@@ -11,7 +13,7 @@
 
             @foreach ($resorts as $resort)
                 <div class="col-md-4 p-3">
-                    <div class="card" style="width: 18rem">
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
                         <div style="max-width:450px; max-height:450px; overflow: hidden;">
                             <img src="{{ $resort->image }}" class="img-fluid">
                         </div>
@@ -30,5 +32,6 @@
 
     </div>
  </div>
+ @include('layouts.inc.footer')
 
 @endsection

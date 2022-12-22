@@ -12,8 +12,8 @@ use App\Http\Controllers\SubCategoryController;
 
 
 //homepage resort
-// Route::get('/', HomepageController::class)->name('homepage');
-Route::get('/',[FrontendController::class,'index']);
+ Route::get('/', HomepageController::class)->name('homepage');
+// Route::get('/',[FrontendController::class,'index']);
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

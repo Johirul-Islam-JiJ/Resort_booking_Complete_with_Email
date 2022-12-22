@@ -1,0 +1,211 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+$font-primary: 'Poppins',Arial, sans-serif;
+
+$primary: #1089ff;
+
+
+body{
+	font-family: $font-primary;
+	font-size: 15px;
+	line-height: 1.8;
+	font-weight: normal;
+}
+a {
+	transition: .3s all ease;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: $font-primary;
+}
+
+
+//COVER BG
+.img,
+.blog-img,
+.user-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.ftco-footer-social {
+	li {
+		list-style: none;
+		margin: 0 10px 0 0;
+		display: inline-block;
+		a {
+			height: 40px;
+			width: 40px;
+			display: block;
+			background: rgba($black, .05);
+			border-radius: 50%;
+			position: relative;
+			span {
+				position: absolute;
+				font-size: 20px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+
+
+//FORM CONTROL
+.form-control {
+	height: 52px;
+	background: $white;
+	color: $black;
+	font-size: 18px;
+	border-radius: 0px;
+	box-shadow: none;
+	border: 1px solid rgba(0,0,0,.1);
+	&:focus, &:active {
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+textarea.form-control {
+	height: inherit!important;
+}
+
+.ftco-section{
+	padding: 12em 0;
+	h2{
+		margin-bottom: 0;
+	}
+}
+
+footer{
+	padding: 7em 0;
+}
+
+//FOOTER 10
+.footer-10{
+	background: #222222;
+	padding: 0 0 4em 0;
+	.border-top, .border-bottom{
+		border-color: rgba(255,255,255,.1) !important;
+	}
+	.footer-heading{
+		font-size: 18px;
+		color: $white;
+		margin-bottom: 30px;
+	}
+	p{
+		color: rgba(255,255,255,.3);
+	}
+	a{
+		color: $primary;
+	}
+	.con{
+		&.con-1{
+			background: darken(#222222,1.5%);
+		}
+		&.con-2{
+			background: darken(#222222,2.5%);
+		}
+		&.con-3{
+			background: lighten(#222222,1%);
+		}
+	}
+	.list-unstyled{
+		li{
+			a{
+				color: rgba(255,255,255,.2);
+				&:hover{
+					color: $white;
+				}
+			}
+		}
+	}
+	.con-info{
+		.icon{
+			width: 50px;
+			height: 50px;
+			background: $primary;
+			border-radius: 50%;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			span{
+				color: $white;
+				font-size: 24px;
+			}
+		}
+		span{
+			color: rgba(255,255,255,.8);
+		}
+	}
+	.subscribe-form{
+		.form-group {
+			position: relative;
+			margin-bottom: 0;
+			@include border-radius(0);
+			input {
+				background: rgba(255,255,255,1) !important;
+				border: none !important;
+				outline : none !important;
+				color: rgba(0,0,0,.3) !important;
+				font-size: 16px;
+				@include border-radius(0);
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  color: rgba(0,0,0,.3) !important;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+				  color: rgba(0,0,0,.3) !important;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+				  color: rgba(0,0,0,.3) !important;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+				  color: rgba(0,0,0,.3) !important;
+				}
+				&:focus{
+					outline: none !important;
+					box-shadow: none;
+				}
+			}
+			.submit{
+				color: $white !important;
+				display: block;
+				width: 130px;
+				height: 52px;
+				font-size: 16px;
+				background: $primary !important;
+				border: none;
+				@include border-radius(0);
+				&:hover, &:focus{
+					text-decoration: none !important;
+					outline: none !important;
+				}
+			}
+		}
+		.subheading{
+			display: inline-block;
+			margin-top: 5px;
+			color: rgba(255,255,255,.3);
+			font-size: 13px;
+		}
+	}
+	.ftco-footer-social{
+		li{
+			a{
+				background: rgba(255,255,255,.1);
+				color: $white;
+			}
+		}
+	}
+}

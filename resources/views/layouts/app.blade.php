@@ -41,7 +41,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #817f77;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -63,26 +63,32 @@
                         <!-- Authentication Links -->
                         @if (Auth::user())
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === '/' ? 'active' : '' }}" href="{{ route('homepage') }}">HomePage</a>
+                                <a class="nav-link {{ Request::path() === '/' ?
+                                'active' : '' }}" href="{{ route('homepage') }}">HomePage</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Dashboard</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-user' ? 'active' : '' }}" aria-current="page" href="{{ route('users.index')}}">User</a>
+                                <a class="nav-link {{ Request::path() === 'home' ?
+                                 'active' : '' }}" href="{{ route('home') }}">Dashboard</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-resort' ? 'active' : '' }}" href="{{ route('resorts.index') }}">Resort List</a>
+                                <a class="nav-link {{ Request::path() === 'view-user' ?
+                                'active' : '' }}" aria-current="page" href="{{ route('users.index')}}">User</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'bookings' ? 'active' : '' }}" href="{{ route('bookings.index') }}">Booking</a>
+                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                 'active' : '' }}" href="{{ route('resorts.index') }}">Resort List</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'bookings' ?
+                                'active' : '' }}" href="{{ route('bookings.index') }}">Booking</a>
                             </li>
                         @else
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === '/' ? 'active' : '' }}" href="{{ route('homepage') }}">Home</a>
+                                <a class="nav-link {{ Request::path() === '/' ?
+                                'active' : '' }}" href="{{ route('homepage') }}">Home</a>
                             </li>
                         @endif
 
