@@ -41,9 +41,9 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #817f77;">
+        <nav class="navbar navbar-expand-md navbar-light text-light" style="background-color: #2e2d2c;">
             <div class="container">
-                <a class="navbar-brand text-light" href="{{ url('/') }}">
+                <a class="navbar-brand text-light font-weight-bold" href="{{ url('/') }}">
                     Cholo Ghuri
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -59,7 +59,7 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto text-light">
                         <!-- Authentication Links -->
                         @if (Auth::user())
                             <li class="nav-item">
@@ -87,28 +87,31 @@
                             </li>
                         @else
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === '/' ?
+                                <a class="nav-link text-light {{ Request::path() === '/' ?
                                 'active' : '' }}" href="{{ route('homepage') }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
                                  'active' : '' }}" href="{{ route('resorts.index') }}">Resort</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
                                  'active' : '' }}" href="#">Package</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
                                  'active' : '' }}" href="#">Swimming</a>
-                            </li><li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
                                  'active' : '' }}" href="#">Travel Advisory</a>
-                            </li></li><li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
                                  'active' : '' }}" href="#">Promotions</a>
-                            </li></li></li><li class="nav-item">
-                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
                                  'active' : '' }}" href="#">Contact Us</a>
                             </li>
 
@@ -118,7 +121,7 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link text-light" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
                         @else
