@@ -43,8 +43,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light" style="background-color: #817f77;">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a class="navbar-brand text-light" href="{{ url('/') }}">
+                    Cholo Ghuri
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -90,6 +90,28 @@
                                 <a class="nav-link {{ Request::path() === '/' ?
                                 'active' : '' }}" href="{{ route('homepage') }}">Home</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                 'active' : '' }}" href="{{ route('resorts.index') }}">Resort</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                 'active' : '' }}" href="#">Package</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                 'active' : '' }}" href="#">Swimming</a>
+                            </li><li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                 'active' : '' }}" href="#">Travel Advisory</a>
+                            </li></li><li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                 'active' : '' }}" href="#">Promotions</a>
+                            </li></li></li><li class="nav-item">
+                                <a class="nav-link {{ Request::path() === 'view-resort' ?
+                                 'active' : '' }}" href="#">Contact Us</a>
+                            </li>
+
                         @endif
 
 

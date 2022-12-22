@@ -4,10 +4,16 @@
       <img class="d-block w-100" src="{{ asset('assets/images/slider.jpg') }}" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ asset('assets/images/slider.jpg') }}" alt="Second slide">
+      <img class="d-block w-100" src="{{ asset('assets/images/slider2.jpg') }}" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ asset('assets/images/slider.jpg') }}" alt="Third slide">
+      <img class="d-block w-100" src="{{ asset('assets/images/slider3.jpg') }}" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ asset('assets/images/slider4.jpg') }}" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ asset('assets/images/slider5.jpg') }}" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
