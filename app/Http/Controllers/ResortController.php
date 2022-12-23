@@ -107,4 +107,10 @@ class ResortController extends Controller
 
         return redirect(route('resorts.index'))->with('message', 'Resort Deleted Successfully');
     }
+
+     public function cards()
+    {
+        $resort = Resort::withTrashed()->latest()->filter(request(['search']))->paginate(5);
+        return view('resorts.cardlist', ['resorts' => $resort]);
+    }
 }

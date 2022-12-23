@@ -31,11 +31,6 @@ Route::group(['middleware' => 'auth'], function() {
     Route::resource('sub-categories', SubCategoryController::class)
     ->except('show')
     ->parameters(['sub-categories' => 'subCategory']);
-
-
-
-
-
 });
 
 
@@ -47,6 +42,8 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('resorts/{id}/restore', [ResortController::class, 'restore'])->name('resorts.restore');
     Route::get('resorts/{id}/force-delete', [ResortController::class, 'forceDelete'])->name('resorts.force-delete');
 });
+
+Route::get('card', [ResortController::class, 'cards'])->name('resorts.cards');
 
 
 // booking

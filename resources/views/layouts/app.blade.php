@@ -92,7 +92,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="{{ route('resorts.index') }}">Resort</a>
+                                 'active' : '' }}" href="{{ route('resorts.cards') }}">Resort</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
