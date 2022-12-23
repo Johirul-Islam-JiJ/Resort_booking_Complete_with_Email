@@ -43,7 +43,6 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('resorts/{id}/force-delete', [ResortController::class, 'forceDelete'])->name('resorts.force-delete');
 });
 
-Route::get('card', [ResortController::class, 'cards'])->name('resorts.cards');
 
 
 // booking
@@ -53,3 +52,9 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('resorts/{resort}/bookings', [BookingController::class, 'store'])->name('bookings.store');
     // Route::post('resorts/{resort}/bookings/destroy', [BookingController::class, 'destroy'])->name('bookings.destroy');
 });
+
+
+//Front-End
+Route::get('card', [ResortController::class, 'cards'])->name('resorts.cards');
+Route::get('promotion', [FrontendController::class, 'promotions'])->name('resorts.promotions');
+
