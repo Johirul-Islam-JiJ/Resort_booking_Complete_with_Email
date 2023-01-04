@@ -31,7 +31,7 @@
 									<span class="ion-ios-call"></span>
 								</div>
 								<div class="text">
-									<span>(+00) 1234 5678</span>
+									<span>01875-191865</span>
 								</div>
 							</div>
 						</div>
@@ -43,7 +43,7 @@
 									<span class="ion-ios-mail"></span>
 								</div>
 								<div class="text">
-									<span>info@email.com</span>
+									<span>info@porch.com</span>
 								</div>
 							</div>
 						</div>
@@ -55,7 +55,7 @@
 									<span class="ion-ios-pin"></span>
 								</div>
 								<div class="text">
-									<span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+									<span>Razzak Plaza,Mogbazar,Dhaka</span>
 								</div>
 							</div>
 						</div>
@@ -106,13 +106,12 @@
 				<div class="row mt-5 pt-4 border-top">
           <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
             <p class="copyright mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="ion-ios-heart" aria-hidden="true"></i> by <a>Porch IT</a></p>
           </div>
           <div class="col-md-6 col-lg-4 text-md-right">
           	<ul class="ftco-footer-social p-0">
-              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://twitter.com/johirul_jij" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com/porch.com.bd" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
               <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
             </ul>
           </div>
