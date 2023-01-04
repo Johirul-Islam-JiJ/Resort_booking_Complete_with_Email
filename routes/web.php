@@ -57,4 +57,5 @@ Route::group(['middleware' => 'auth'], function() {
 //Front-End
 Route::get('card', [ResortController::class, 'cards'])->name('resorts.cards');
 Route::get('promotion', [FrontendController::class, 'promotions'])->name('resorts.promotions');
+Route::get('contact', [FrontendController::class, 'contact'])->name('resorts.contact');
 

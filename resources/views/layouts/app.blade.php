@@ -112,7 +112,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light {{ Request::path() === 'view-resort' ?
-                                 'active' : '' }}" href="#">Contact Us</a>
+                                 'active' : '' }}" href="{{ route('resorts.contact') }}">Contact Us</a>
                             </li>
 
                         @endif
