@@ -20,4 +20,9 @@ class FrontendController extends Controller
     {
         return view('frontend.contact');
     }
+    public function onepage()
+    {
+        return view('onepage.index');
+    }
+
 }

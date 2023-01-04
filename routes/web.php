@@ -58,4 +58,5 @@ Route::group(['middleware' => 'auth'], function() {
 Route::get('card', [ResortController::class, 'cards'])->name('resorts.cards');
 Route::get('promotion', [FrontendController::class, 'promotions'])->name('resorts.promotions');
 Route::get('contact', [FrontendController::class, 'contact'])->name('resorts.contact');
+Route::get('onepage', [FrontendController::class, 'onepage'])->name('resorts.onepage');
 
