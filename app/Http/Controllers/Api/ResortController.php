@@ -40,8 +40,8 @@ class ResortController extends Controller
         }
 
         return response()->json(['error' => 'Uh !! Something Wrong'], 500);
-
     }
+    
 
     public function show($resort)
     {
